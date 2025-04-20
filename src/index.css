@@ -1,17 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import "tailwindcss";
+
 *{
-    font-family: 'Poppins';
-    scroll-behavior: smooth;
+    /*font-family: cursive;*/
+
+    /*font-family: "Playwrite IN", serif;*/
+
+    font-family: "Ubuntu Mono", serif;
+    font-weight: 400; /* 400 / 700 */
+    font-style: normal;
 }
 
-::-webkit-scrollbar{
-    width: 20px;
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
 }
-::-webkit-scrollbar-track{
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.9);
 }
-::-webkit-scrollbar-thumb{
-    background: linear-gradient(to bottom, rgb(124,210,252), rgb(31,58,139));
+
+::-webkit-scrollbar-thumb {
+    background-color: #131313;
 }
