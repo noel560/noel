@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import bgImage from './assets/1.png'
 import './Home.css'
+import { Link } from "react-router-dom"
 
 function App() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -31,10 +32,10 @@ function App() {
                     <div className="flex flex-1 items-center justify-center sm:items-stretch">
                         <div className="hidden sm:ml-6 sm:block">
                             <div className="flex space-x-4">
-                                <a href="/" className="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-neutral-900/50 transition-all">Home</a>
-                                <a href="/about" className="rounded-md hover:bg-neutral-900/50 px-3 py-2 text-lg font-medium text-white transition-all">About</a>
-                                <a href="/projects" className="rounded-md bg-neutral-900/50 border-2 border-neutral-800/50 px-3 py-2 text-lg font-medium text-white" aria-current="page">Projects</a>
-                                <a href="/contact" className="rounded-md hover:bg-neutral-900/50 px-3 py-2 text-lg font-medium text-white transition-all">Contact</a>
+                                <Link to="/" className="rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-neutral-900/50 transition-all">Home</Link>
+                                <Link to="/about" className="rounded-md hover:bg-neutral-900/50 px-3 py-2 text-lg font-medium text-white transition-all">About</Link>
+                                <Link to="/projects" className="rounded-md bg-neutral-900/50 border-2 border-neutral-800/50 px-3 py-2 text-lg font-medium text-white" aria-current="page">Projects</Link>
+                                <Link to="/contact" className="rounded-md hover:bg-neutral-900/50 px-3 py-2 text-lg font-medium text-white transition-all">Contact</Link>
                             </div>
                         </div>
                     </div>
@@ -43,10 +44,10 @@ function App() {
 
             <div className={`sm:hidden ${menuOpen ? 'block' : 'hidden'} z-20`} id="mobile-menu">
                 <div className="space-y-1 px-2 pb-3 pt-2 z-20">
-                    <a href="/" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-neutral-900 transition-all">Home</a>
-                    <a href="/about" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-neutral-900 transition-all">About</a>
-                    <a href="/projects" className="block rounded-md bg-neutral-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Projects</a>
-                    <a href="/contact" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-neutral-900 transition-all">Contact</a>
+                    <Link to="/" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-neutral-900 transition-all">Home</Link>
+                    <Link to="/about" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-neutral-900 transition-all">About</Link>
+                    <Link to="/projects" className="block rounded-md bg-neutral-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Projects</Link>
+                    <Link to="/contact" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-neutral-900 transition-all">Contact</Link>
                 </div>
             </div>
         </nav>
