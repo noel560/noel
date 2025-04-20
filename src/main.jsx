@@ -7,7 +7,7 @@ import Home from './Home.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/*<Home />*/}
-    <Router>
+    <Router basename='/noel'>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
