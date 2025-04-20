@@ -8,7 +8,7 @@ import { TbBrandCpp } from "react-icons/tb"
 import { FaSquareXTwitter } from "react-icons/fa6"
 import { SiLua } from "react-icons/si"
 import { CiMapPin } from "react-icons/ci"
-import pfp from './assets/temppfp.jpg'
+import pfp from './assets/temppfp.png'
 
 function App() {
     const [menuOpen, setMenuOpen] = useState(false);
