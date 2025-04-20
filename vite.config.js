@@ -9,4 +9,11 @@ export default defineConfig({
     react()
   ],
   base: "/noel",
+  build: {
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+      },
+    },
+  },
 });
