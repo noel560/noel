@@ -11,7 +11,9 @@ function App() {
     };
 
     return <>
-        <div className="fixed top-0 left-0 w-full h-full bg-cover opacity-25 blur-[2px] -z-10" style={{ backgroundImage: `url(${bgImage})` }} draggable="false" onDragStart={() => false} onContextMenu={() => false}></div>
+        <div className="fixed top-0 left-0 w-full h-full bg-cover opacity-25 blur-[2px] -z-10" style={{ backgroundImage: `url(${bgImage})` }} draggable="false" onDragStart={() => false} onContextMenu={() => false}>
+            <div className='absolute inset-0 bg-black opacity-40'></div>
+        </div>
         <nav className="bg-transparent">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-20 items-center justify-between">
@@ -53,7 +55,21 @@ function App() {
         </nav>
 
         <div className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg w-full max-w-2xl mx-auto py-5">
-            <h1 className='text-white'>About</h1>
+            <h1 className='text-white text-3xl'>About Me</h1>
+
+            <p className='text-white text-lg mt-4'>I'm a developer from Hungary with a strong curiosity for how things work under the hood. Currently diving deep into <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span> and <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Python</span>, with the goal of building a career in software development, game programming, or cybersecurity.</p>
+            <p className='text-white text-lg mt-4'>I have experience in <span className="bg-neutral-700" style={{ fontWeight: 700 }}>web development</span>, though it's not the field I want to pursue long-term. I'm much more passionate about building systems, games, or exploring the world of cybersecurity.</p>
+            <p className='text-white text-lg mt-4'>I’m on a journey to become a well-rounded developer, and plan to explore <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Rust</span>, <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Bash</span> scripting, and <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C</span> in the near future.</p>
+        
+            <hr className='border-neutral-800/50 w-full mt-8 rounded-full border-1' />
+
+            <h1 className='text-white mt-4 text-2xl'>How It Started</h1>
+
+            <p className='text-white text-lg mt-4'>My journey into development began around 2020-2021, when I started making Minecraft servers and experimenting with plugins. As the years went on, web development became more and more relevant, and I naturally picked up <span className="bg-neutral-700" style={{ fontWeight: 700 }}>HTML</span> and <span className="bg-neutral-700" style={{ fontWeight: 700 }}>CSS</span> along the way.</p>
+            <p className='text-white text-lg mt-4'>From 2020 to 2025, I worked on a few smaller projects here and there like <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Java MC plugins</span> and websites but I never fully dove into deep programming until now.</p>
+            <p className='text-white text-lg mt-4'>In 2025, I decided to take a big step forward and started learning <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span> and <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Python</span>, with a focus on system programming and game development.
+            I'm excited for the challenges ahead and looking forward to building something even bigger.</p>
+
         </div>
     </>;
 }
