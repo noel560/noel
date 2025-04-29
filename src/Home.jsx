@@ -9,9 +9,12 @@ import { FaSquareXTwitter } from "react-icons/fa6"
 import { SiLua } from "react-icons/si"
 import { CiMapPin } from "react-icons/ci"
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 
 function App() {
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const MotionLink = motion(Link);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -61,7 +64,7 @@ function App() {
             </div>
         </nav>
 
-        <div className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg w-full max-w-2xl mx-auto py-5">
+        <motion.div initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.4 }} className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg w-full max-w-2xl mx-auto py-5">
             <div className="text-white text-[2.5rem] gap-1 flex flex-col items-end absolute top-0 right-0 mr-4 mt-4">
                 <a href="https://github.com/noel560"><BiLogoGithub className="p-2 transition duration-500 hover:scale-90 hover:bg-neutral-800/50 cursor-pointer bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg" /></a>
                 <a href="mailto:noel540715@gmail.com"><FaEnvelope className="p-2 transition duration-500 hover:scale-90 hover:bg-neutral-800/50 cursor-pointer bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg" /></a>
@@ -134,7 +137,7 @@ function App() {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     </>;
 }
 

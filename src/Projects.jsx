@@ -2,6 +2,9 @@ import { useState } from 'react'
 import bgImage from './assets/1.png'
 import './Home.css'
 import { Link } from "react-router-dom"
+import { BiLogoCss3, BiLogoDiscord, BiLogoGithub, BiLogoHtml5, BiLogoJavascript, BiLogoPython, BiLogoTailwindCss, BiLogoTwitter, BiLogoTypescript } from "react-icons/bi"
+import { FaReact, FaEnvelope } from "react-icons/fa"
+import { motion } from "framer-motion"
 
 function App() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -54,9 +57,63 @@ function App() {
             </div>
         </nav>
 
-        <div className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg w-full max-w-2xl mx-auto py-5">
-            <h1 className='text-white'>Projects</h1>
-        </div>
+        <motion.div initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.4 }} className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg w-full max-w-2xl mx-auto py-5">
+            <h1 className='text-white text-3xl'>Projects</h1>
+
+            {/* Project 1 */}
+            <div className="bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg p-4 w-full flex flex-col sm:flex-row items-center justify-center mt-8">
+                <div className="flex flex-col sm:mr-4 mb-4 sm:mb-0 sm:w-1/2">
+                    <img src={bgImage} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
+                    <button className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer">Read More</button>
+                </div>
+                <div className="flex flex-col text-center sm:text-left sm:w-1/2">
+                    <h1 className="text-white text-3xl font-bold mb-2">Project Name</h1>
+                    <p className="text-gray-300 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati nisi mollitia quae quidem consequatur, esse laboriosam ex earum voluptates assumenda exercitationem facilis perspiciatis odio dolores? Corrupti enim aspernatur tenetur!</p>
+                    <div className="flex flex-row gap-2 justify-center sm:justify-start mt-2 items-center">
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><FaReact /></span>
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoTailwindCss /></span>
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoHtml5 /></span>
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoCss3 /></span>
+                    </div>
+                </div>
+            </div>
+
+            {/* Project 2 */}
+            <div className="bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg p-4 w-full flex flex-col sm:flex-row items-center justify-center mt-8">
+                <div className="flex flex-col sm:mr-4 mb-4 sm:mb-0 sm:w-1/2">
+                    <img src={bgImage} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
+                    <button className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer">Read More</button>
+                </div>
+                <div className="flex flex-col text-center sm:text-left sm:w-1/2">
+                    <h1 className="text-white text-3xl font-bold mb-2">Project Name</h1>
+                    <p className="text-gray-300 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati nisi mollitia quae quidem consequatur, esse laboriosam ex earum voluptates assumenda exercitationem facilis perspiciatis odio dolores? Corrupti enim aspernatur tenetur!</p>
+                    <div className="flex flex-row gap-2 justify-center sm:justify-start mt-2 items-center">
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><FaReact /></span>
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoTailwindCss /></span>
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoHtml5 /></span>
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoCss3 /></span>
+                    </div>
+                </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg p-4 w-full flex flex-col sm:flex-row items-center justify-center mt-8">
+                <div className="flex flex-col sm:mr-4 mb-4 sm:mb-0 sm:w-1/2">
+                    <img src={bgImage} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
+                    <button className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer">Read More</button>
+                </div>
+                <div className="flex flex-col text-center sm:text-left sm:w-1/2">
+                    <h1 className="text-white text-3xl font-bold mb-2">Project Name</h1>
+                    <p className="text-gray-300 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati nisi mollitia quae quidem consequatur, esse laboriosam ex earum voluptates assumenda exercitationem facilis perspiciatis odio dolores? Corrupti enim aspernatur tenetur!</p>
+                    <div className="flex flex-row gap-2 justify-center sm:justify-start mt-2 items-center">
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><FaReact /></span>
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoTailwindCss /></span>
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoHtml5 /></span>
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoCss3 /></span>
+                    </div>
+                </div>
+            </div>
+        </motion.div>
     </>;
 }
 

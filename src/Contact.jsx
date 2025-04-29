@@ -10,6 +10,7 @@ import { FaSquareXTwitter } from "react-icons/fa6"
 import { SiLua } from "react-icons/si"
 import { CiMapPin } from "react-icons/ci"
 import pfp from './assets/temppfp.png'
+import { motion } from "framer-motion"
 
 function App() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -63,9 +64,9 @@ function App() {
         </nav>
 
         {/* Main */}
-        <div className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg w-full max-w-2xl mx-auto py-5">
+        <motion.div initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.4 }} className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg w-full max-w-2xl mx-auto py-5">
             <h1 className="text-white">Contact</h1>
-        </div>
+        </motion.div>
     </>;
 }
 

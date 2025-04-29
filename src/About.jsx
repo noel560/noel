@@ -2,6 +2,7 @@ import { useState } from 'react'
 import bgImage from './assets/1.png'
 import './Home.css'
 import { Link } from "react-router-dom"
+import { motion } from "framer-motion"
 
 function App() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -54,7 +55,7 @@ function App() {
             </div>
         </nav>
 
-        <div className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg w-full max-w-2xl mx-auto py-5">
+        <motion.div initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.4 }} className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg w-full max-w-2xl mx-auto py-5">
             <h1 className='text-white text-3xl'>About Me</h1>
 
             <p className='text-white text-lg mt-4'>I'm a developer from Hungary with a strong curiosity for how things work under the hood. Currently diving deep into <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span> and <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Python</span>, with the goal of building a career in software development, game programming, or cybersecurity.</p>
@@ -70,7 +71,7 @@ function App() {
             <p className='text-white text-lg mt-4'>In 2025, I decided to take a big step forward and started learning <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span> and <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Python</span>, with a focus on system programming and game development.
             I'm excited for the challenges ahead and looking forward to building something even bigger.</p>
 
-        </div>
+        </motion.div>
     </>;
 }
 
