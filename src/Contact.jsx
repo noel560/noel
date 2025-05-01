@@ -2,14 +2,9 @@ import { useState } from 'react'
 import bgImage from './assets/1.png'
 import './Home.css'
 import { Link } from "react-router-dom"
-
-import { BiLogoCss3, BiLogoDiscord, BiLogoGithub, BiLogoHtml5, BiLogoJavascript, BiLogoPython, BiLogoTailwindCss, BiLogoTwitter, BiLogoTypescript } from "react-icons/bi"
-import { FaReact, FaEnvelope } from "react-icons/fa"
-import { TbBrandCpp } from "react-icons/tb"
+import { BiLogoDiscord, BiLogoGithub } from "react-icons/bi"
 import { FaSquareXTwitter } from "react-icons/fa6"
-import { SiLua } from "react-icons/si"
-import { CiMapPin } from "react-icons/ci"
-import pfp from './assets/temppfp.png'
+import { FaEnvelope } from "react-icons/fa"
 import { motion } from "framer-motion"
 
 function App() {
@@ -64,9 +59,53 @@ function App() {
         </nav>
 
         {/* Main */}
-        <motion.div initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.4 }} className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg w-full max-w-2xl mx-auto py-5">
-            <h1 className="text-white">Contact</h1>
+        <motion.div
+            initial={{ scale: 0.95, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.4 }}
+            className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-2xl shadow-xl w-full max-w-2xl mx-auto py-8"
+        >
+            <h1 className="text-white text-3xl font-semibold mb-2">Contact</h1>
+            <p className="text-white text-lg text-center mb-6">
+                Feel free to reach out through any of the platforms below. <br />
+                I’ll get back to you as soon as I can!
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+                <a href="https://discord.com/users/1126931627059195956" target="_blank">
+                    <div className="flex flex-col items-center bg-neutral-800/50 rounded-xl p-4 hover:bg-neutral-800 transition-all cursor-pointer">
+                        <BiLogoDiscord size={32} className='text-white' />
+                        <h2 className="mt-2 text-white font-medium">Discord</h2>
+                        <p className="text-neutral-300">noel54_</p>
+                    </div>
+                </a>
+
+                <a href="mailto:noel540715@gmail.com" target="_blank">
+                    <div className="flex flex-col items-center bg-neutral-800/50 rounded-xl p-4 hover:bg-neutral-800 transition-all cursor-pointer">
+                        <FaEnvelope size={28} className='text-white' />
+                        <h2 className="mt-2 text-white font-medium">Email</h2>
+                        <p className="text-neutral-300">noel540715@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://x.com/Noel54_" target="_blank">
+                    <div className="flex flex-col items-center bg-neutral-800/50 rounded-xl p-4 hover:bg-neutral-800 transition-all cursor-pointer">
+                        <FaSquareXTwitter size={28} className='text-white' />
+                        <h2 className="mt-2 text-white font-medium">Twitter</h2>
+                        <p className="text-neutral-300">@Noel54_</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/noel560" target="_blank">
+                    <div className="flex flex-col items-center bg-neutral-800/50 rounded-xl p-4 hover:bg-neutral-800 transition-all cursor-pointer">
+                        <BiLogoGithub size={28} className='text-white' />
+                        <h2 className="mt-2 text-white font-medium">GitHub</h2>
+                        <p className="text-neutral-300">noel560</p>
+                    </div>
+                </a>
+            </div>
         </motion.div>
+
     </>;
 }
 

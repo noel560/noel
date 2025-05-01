@@ -2,7 +2,7 @@ import { useState } from 'react'
 import bgImage from './assets/1.png'
 import pfp from './assets/temppfp.png'
 import './Home.css'
-import { BiLogoCss3, BiLogoDiscord, BiLogoGithub, BiLogoHtml5, BiLogoJavascript, BiLogoPython, BiLogoTailwindCss, BiLogoTwitter, BiLogoTypescript } from "react-icons/bi"
+import { BiLogoCss3, BiLogoGithub, BiLogoHtml5, BiLogoPython, BiLogoTailwindCss } from "react-icons/bi"
 import { FaReact, FaEnvelope } from "react-icons/fa"
 import { TbBrandCpp } from "react-icons/tb"
 import { FaSquareXTwitter } from "react-icons/fa6"
@@ -66,9 +66,9 @@ function App() {
 
         <motion.div initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.4 }} className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg w-full max-w-2xl mx-auto py-5">
             <div className="text-white text-[2.5rem] gap-1 flex flex-col items-end absolute top-0 right-0 mr-4 mt-4">
-                <a href="https://github.com/noel560"><BiLogoGithub className="p-2 transition duration-500 hover:scale-90 hover:bg-neutral-800/50 cursor-pointer bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg" /></a>
-                <a href="mailto:noel540715@gmail.com"><FaEnvelope className="p-2 transition duration-500 hover:scale-90 hover:bg-neutral-800/50 cursor-pointer bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg" /></a>
-                <a href="https://x.com/Noel54_"><FaSquareXTwitter className="p-2 transition duration-500 hover:scale-90 hover:bg-neutral-800/50 cursor-pointer bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg" /></a>
+                <a href="https://github.com/noel560" target="_blank"><BiLogoGithub className="p-2 transition duration-500 hover:scale-90 hover:bg-neutral-800/50 cursor-pointer bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg" /></a>
+                <a href="mailto:noel540715@gmail.com" target="_blank"><FaEnvelope className="p-2 transition duration-500 hover:scale-90 hover:bg-neutral-800/50 cursor-pointer bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg" /></a>
+                <a href="https://x.com/Noel54_" target="_blank"><FaSquareXTwitter className="p-2 transition duration-500 hover:scale-90 hover:bg-neutral-800/50 cursor-pointer bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg" /></a>
             </div>
             
             <div className="flex flex-col sm:flex-row items-center justify-center">

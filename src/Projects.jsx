@@ -2,8 +2,8 @@ import { useState } from 'react'
 import bgImage from './assets/1.png'
 import './Home.css'
 import { Link } from "react-router-dom"
-import { BiLogoCss3, BiLogoDiscord, BiLogoGithub, BiLogoHtml5, BiLogoJavascript, BiLogoPython, BiLogoTailwindCss, BiLogoTwitter, BiLogoTypescript } from "react-icons/bi"
-import { FaReact, FaEnvelope } from "react-icons/fa"
+import { BiLogoCss3, BiLogoHtml5, BiLogoPython, BiLogoTailwindCss } from "react-icons/bi"
+import { FaReact } from "react-icons/fa"
 import { motion } from "framer-motion"
 
 function App() {
