@@ -14,8 +14,6 @@ import { motion } from "framer-motion"
 function App() {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const MotionLink = motion(Link);
-
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -64,13 +62,18 @@ function App() {
             </div>
         </nav>
 
-        <motion.div initial={{ scale: 0.95, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 0.4 }} className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg w-full max-w-2xl mx-auto py-5">
+        <motion.div
+            initial={{ scale: 0.95, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.4 }}
+            className="flex flex-col relative items-center justify-center mt-10 px-4 sm:px-6 lg:px-8 bg-neutral-900/50 border-2 border-neutral-800/50 rounded-2xl shadow-lg w-full max-w-2xl mx-auto py-5"
+        >
             <div className="text-white text-[2.5rem] gap-1 flex flex-col items-end absolute top-0 right-0 mr-4 mt-4">
                 <a href="https://github.com/noel560" target="_blank"><BiLogoGithub className="p-2 transition duration-500 hover:scale-90 hover:bg-neutral-800/50 cursor-pointer bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg" /></a>
                 <a href="mailto:noel540715@gmail.com" target="_blank"><FaEnvelope className="p-2 transition duration-500 hover:scale-90 hover:bg-neutral-800/50 cursor-pointer bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg" /></a>
                 <a href="https://x.com/Noel54_" target="_blank"><FaSquareXTwitter className="p-2 transition duration-500 hover:scale-90 hover:bg-neutral-800/50 cursor-pointer bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg" /></a>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row items-center justify-center">
                 <img src={pfp} alt="Noel" className="rounded-full w-24 h-24 sm:w-30 sm:h-30 border-2 border-neutral-800/50 cursor-pointer hover:animate-spin" draggable="false" onDragStart={() => false} onContextMenu={() => false}></img>
                 <div className="flex flex-col ml-0 sm:ml-4 mt-4 sm:mt-0 text-center sm:text-left">
@@ -78,7 +81,7 @@ function App() {
                     <p className="text-md sm:text-lg text-gray-300">C++ Developer</p>
                     <div className="flex flex-row items-center justify-center sm:justify-start">
                         <p className="text-md sm:text-lg text-gray-300">
-                            <span className="inline-flex items-center gap-1"><CiMapPin/>Hungary</span>
+                            <span className="inline-flex items-center gap-1"><CiMapPin />Hungary</span>
                         </p>
                     </div>
                 </div>
