@@ -88,8 +88,8 @@ function App() {
             </div>
 
             <div className="text-white mt-6 sm:mt-10 max-w-2xl text-justify sm:text-left">
-                {/*<p>I'm a 15-year-old developer with experience in <span className="bg-neutral-700" style={{ fontWeight: 700 }}>web development</span>, but my main focus is on <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span>. I'm passionate about creating optimized solutions and continuously improving my skills in both web and system programming.</p>*/}
-                <p>Hi, I'm a 15-year-old developer passionate about technology. I'm currently learning <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span> and <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Python</span>, aiming to pursue a career in software/game development or cybersecurity. Always eager to build, break, and learn more!</p>
+                {/*<p>I'm a 16-year-old developer with experience in <span className="bg-neutral-700" style={{ fontWeight: 700 }}>web development</span>, but my main focus is on <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span>. I'm passionate about creating optimized solutions and continuously improving my skills in both web and system programming.</p>*/}
+                <p>Hi, I'm a 16-year-old developer passionate about technology. I'm currently learning <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span> and <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Python</span>, aiming to pursue a career in software/game development or cybersecurity. Always eager to build, break, and learn more!</p>
             </div>
 
             <div className="flex flex-col gap-4 justify-center mt-6 sm:mt-10 text-white items-center">
