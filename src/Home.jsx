@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import bgImage from './assets/1.png'
+import crfImage from './assets/CRFTHUMBNAIL.png'
+import luau from './assets/luau.png'
+import sentinelImage from './assets/sentinel.png'
 import pfp from './assets/temppfp.png'
 import './Home.css'
 import { BiLogoCss3, BiLogoGithub, BiLogoHtml5, BiLogoPython, BiLogoTailwindCss } from "react-icons/bi"
@@ -78,7 +81,7 @@ function App() {
                 <img src={pfp} alt="Noel" className="rounded-full w-24 h-24 sm:w-30 sm:h-30 border-2 border-neutral-800/50 cursor-pointer hover:animate-spin" draggable="false" onDragStart={() => false} onContextMenu={() => false}></img>
                 <div className="flex flex-col ml-0 sm:ml-4 mt-4 sm:mt-0 text-center sm:text-left">
                     <h1 className="text-3xl sm:text-5xl font-bold text-white">Noel</h1>
-                    <p className="text-md sm:text-lg text-gray-300">C++ Developer</p>
+                    <p className="text-md sm:text-lg text-gray-300">Roblox Dev</p>
                     <div className="flex flex-row items-center justify-center sm:justify-start">
                         <p className="text-md sm:text-lg text-gray-300">
                             <span className="inline-flex items-center gap-1"><CiMapPin />Hungary</span>
@@ -88,8 +91,8 @@ function App() {
             </div>
 
             <div className="text-white mt-6 sm:mt-10 max-w-2xl text-justify sm:text-left">
-                {/*<p>I'm a 16-year-old developer with experience in <span className="bg-neutral-700" style={{ fontWeight: 700 }}>web development</span>, but my main focus is on <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span>. I'm passionate about creating optimized solutions and continuously improving my skills in both web and system programming.</p>*/}
-                <p>Hi, I'm a 16-year-old developer passionate about technology. I'm currently learning <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span> and <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Python</span>, aiming to pursue a career in software/game development or cybersecurity. Always eager to build, break, and learn more!</p>
+                {/*<p>Hi, I'm a 16-year-old developer passionate about technology. I'm currently learning <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span> and <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Python</span>, aiming to pursue a career in software/game development or cybersecurity. Always eager to build, break, and learn more!</p>*/}
+                <p>Hi, I’m Noel, a Roblox game developer in the making. Currently creating fun experiences and systems on Roblox, while preparing to dive deeper into C++ and more advanced game development in the future.</p>
             </div>
 
             <div className="flex flex-col gap-4 justify-center mt-6 sm:mt-10 text-white items-center">
@@ -100,7 +103,8 @@ function App() {
                     <BiLogoCss3 className="hover:text-gray-300 hover:scale-90 transition-all cursor-pointer duration-500" />
                     <BiLogoHtml5 className="hover:text-gray-300 hover:scale-90 transition-all cursor-pointer duration-500" />
                     <BiLogoTailwindCss className="hover:text-gray-300 hover:scale-90 transition-all cursor-pointer duration-500" />
-                    <SiLua className="hover:text-gray-300 hover:scale-90 transition-all cursor-pointer duration-500" />
+                    {/*<SiLua className="hover:text-gray-300 hover:scale-90 transition-all cursor-pointer duration-500" />*/}
+                    <img src={luau} className="hover:text-gray-300 hover:scale-90 transition-all cursor-pointer duration-500 size-16"/>
                 </div>
             </div>
 
@@ -109,33 +113,29 @@ function App() {
 
                 <div className="bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg p-4 w-full flex flex-col sm:flex-row items-center justify-center">
                     <div className="flex flex-col sm:mr-4 mb-4 sm:mb-0 sm:w-1/2">
-                        <img src={bgImage} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
-                        <button className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer">Read More</button>
+                        <img src={crfImage} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
+                        <a target="_blank" href="https://devforum.roblox.com/t/plugin-cross-reference-finder-%E2%80%93-instantly-locate-object-references-in-your-game/3908607" className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer text-center">Read More</a>
                     </div>
                     <div className="flex flex-col text-center sm:text-left sm:w-1/2">
-                        <h1 className="text-3xl font-bold mb-2">Project Name</h1>
-                        <p className="text-gray-300 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati nisi mollitia quae quidem consequatur, esse laboriosam ex earum voluptates assumenda exercitationem facilis perspiciatis odio dolores? Corrupti enim aspernatur tenetur!</p>
+                        <h1 className="text-3xl font-bold mb-2">Cross Reference Finder</h1>
+                        <p className="text-gray-300 text-justify">Cross Reference Finder is a developer tool that helps you instantly locate where objects, ModuleScripts, and variables are being referenced across your Roblox game.</p>
                         <div className="flex flex-row gap-2 justify-center sm:justify-start mt-2 items-center">
-                            <span className='bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><FaReact /></span>
-                            <span className='bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoTailwindCss /></span>
-                            <span className='bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoHtml5 /></span>
-                            <span className='bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoCss3 /></span>
+                            {/*<span className='bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><SiLua /></span>*/}
+                            <span className='bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><img src={luau} className='size-4'/></span>
                         </div>
                     </div>
                 </div>
 
                 <div className="bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg p-4 w-full flex flex-col sm:flex-row items-center justify-center">
                     <div className="flex flex-col sm:mr-4 mb-4 sm:mb-0 sm:w-1/2">
-                        <img src={bgImage} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
-                        <button className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer">Read More</button>
+                        <img src={sentinelImage} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
+                        <a target="_blank" href="#" className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer text-center">Read More</a>
                     </div>
                     <div className="flex flex-col text-center sm:text-left sm:w-1/2">
-                        <h1 className="text-3xl font-bold mb-2">Project Name</h1>
-                        <p className="text-gray-300 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati nisi mollitia quae quidem consequatur, esse laboriosam ex earum voluptates assumenda exercitationem facilis perspiciatis odio dolores? Corrupti enim aspernatur tenetur!</p>
+                        <h1 className="text-3xl font-bold mb-2">Sentinel (WIP)</h1>
+                        <p className="text-gray-300 text-justify">A custom security system for Roblox that detects and logs exploits, integrates with webhooks, and provides an in-game admin panel.</p>
                         <div className="flex flex-row gap-2 justify-center sm:justify-start mt-2 items-center">
-                            <span className='bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'>HTML</span>
-                            <span className='bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'>Tailwind</span>
-                            <span className='bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'>React</span>
+                            <span className='bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><img src={luau} className='size-4'/></span>
                         </div>
                     </div>
                 </div>

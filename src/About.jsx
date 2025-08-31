@@ -63,7 +63,7 @@ function App() {
         >
             <h1 className='text-white text-3xl'>About Me</h1>
 
-            <p className='text-white text-lg mt-4'>I'm a developer from Hungary with a strong curiosity for how things work under the hood. Currently diving deep into <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span> and <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Python</span>, with the goal of building a career in software development, game programming, or cybersecurity.</p>
+            <p className='text-white text-lg mt-4'>I'm a developer from Hungary with a strong curiosity for how things work under the hood. Currently creating fun experiences and systems on Roblox, while preparing to dive deeper into <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C++</span> and more advanced game development in the future.</p>
             <p className='text-white text-lg mt-4'>I have experience in <span className="bg-neutral-700" style={{ fontWeight: 700 }}>web development</span>, though it's not the field I want to pursue long-term. I'm much more passionate about building systems, games, or exploring the world of cybersecurity.</p>
             <p className='text-white text-lg mt-4'>I’m on a journey to become a well-rounded developer, and plan to explore <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Rust</span>, <span className="bg-neutral-700" style={{ fontWeight: 700 }}>Bash</span> scripting, and <span className="bg-neutral-700" style={{ fontWeight: 700 }}>C</span> in the near future.</p>
 

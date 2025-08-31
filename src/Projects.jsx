@@ -1,5 +1,10 @@
 import { useState } from 'react'
 import bgImage from './assets/1.png'
+import ratShell from './assets/ratshell.png'
+import sabersync from './assets/sabersync.png'
+import crfImage from './assets/CRFTHUMBNAIL.png'
+import luau from './assets/luau.png'
+import sentinelImage from './assets/sentinel.png'
 import './Home.css'
 import { Link } from "react-router-dom"
 import { BiLogoCss3, BiLogoHtml5, BiLogoPython, BiLogoTailwindCss } from "react-icons/bi"
@@ -68,14 +73,14 @@ function App() {
             {/* Project 1 */}
             <div className="bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg p-4 w-full flex flex-col sm:flex-row items-center justify-center mt-8">
                 <div className="flex flex-col sm:mr-4 mb-4 sm:mb-0 sm:w-1/2">
-                    <img src={bgImage} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
-                    <button className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer">Read More</button>
+                    <img src={sabersync} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
+                    <a target="_blank" href="https://github.com/noel560/SaberSync" className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer text-center">Read More</a>
                 </div>
                 <div className="flex flex-col text-center sm:text-left sm:w-1/2">
-                    <h1 className="text-white text-3xl font-bold mb-2">Project Name</h1>
-                    <p className="text-gray-300 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati nisi mollitia quae quidem consequatur, esse laboriosam ex earum voluptates assumenda exercitationem facilis perspiciatis odio dolores? Corrupti enim aspernatur tenetur!</p>
+                    <h1 className="text-white text-3xl font-bold mb-2">SaberSync</h1>
+                    <p className="text-gray-300 text-justify">An experimental AI-powered Beat Saber project. The goal was to take an uploaded song and user settings, then automatically generate a playable map using music analysis and procedural generation.</p>
                     <div className="flex flex-row gap-2 justify-center sm:justify-start mt-2 items-center">
-                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><FaReact /></span>
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoPython /></span>
                         <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoTailwindCss /></span>
                         <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoHtml5 /></span>
                         <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoCss3 /></span>
@@ -86,17 +91,14 @@ function App() {
             {/* Project 2 */}
             <div className="bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg p-4 w-full flex flex-col sm:flex-row items-center justify-center mt-8">
                 <div className="flex flex-col sm:mr-4 mb-4 sm:mb-0 sm:w-1/2">
-                    <img src={bgImage} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
-                    <button className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer">Read More</button>
+                    <img src={ratShell} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
+                    <a target="_blank" href="https://github.com/noel560/Random-Python-Terminal" className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer text-center">Read More</a>
                 </div>
                 <div className="flex flex-col text-center sm:text-left sm:w-1/2">
-                    <h1 className="text-white text-3xl font-bold mb-2">Project Name</h1>
-                    <p className="text-gray-300 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati nisi mollitia quae quidem consequatur, esse laboriosam ex earum voluptates assumenda exercitationem facilis perspiciatis odio dolores? Corrupti enim aspernatur tenetur!</p>
+                    <h1 className="text-white text-3xl font-bold mb-2">RatShell</h1>
+                    <p className="text-gray-300 text-justify">A custom CLI packed with extra utilities and small programs not normally available in a standard terminal. Designed as a playground to experiment with Python, improve productivity, and extend shell capabilities.</p>
                     <div className="flex flex-row gap-2 justify-center sm:justify-start mt-2 items-center">
-                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><FaReact /></span>
-                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoTailwindCss /></span>
-                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoHtml5 /></span>
-                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoCss3 /></span>
+                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoPython /></span>
                     </div>
                 </div>
             </div>
@@ -104,17 +106,29 @@ function App() {
             {/* Project 3 */}
             <div className="bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg p-4 w-full flex flex-col sm:flex-row items-center justify-center mt-8">
                 <div className="flex flex-col sm:mr-4 mb-4 sm:mb-0 sm:w-1/2">
-                    <img src={bgImage} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
-                    <button className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer">Read More</button>
+                    <img src={crfImage} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
+                    <a target="_blank" href="https://devforum.roblox.com/t/plugin-cross-reference-finder-%E2%80%93-instantly-locate-object-references-in-your-game/3908607" className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer text-center">Read More</a>
                 </div>
                 <div className="flex flex-col text-center sm:text-left sm:w-1/2">
-                    <h1 className="text-white text-3xl font-bold mb-2">Project Name</h1>
-                    <p className="text-gray-300 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati nisi mollitia quae quidem consequatur, esse laboriosam ex earum voluptates assumenda exercitationem facilis perspiciatis odio dolores? Corrupti enim aspernatur tenetur!</p>
+                    <h1 className="text-white text-3xl font-bold mb-2">Cross Reference Finder</h1>
+                    <p className="text-gray-300 text-justify">Cross Reference Finder is a developer tool that helps you instantly locate where objects, ModuleScripts, and variables are being referenced across your Roblox game.</p>
                     <div className="flex flex-row gap-2 justify-center sm:justify-start mt-2 items-center">
-                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><FaReact /></span>
-                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoTailwindCss /></span>
-                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoHtml5 /></span>
-                        <span className='text-white bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><BiLogoCss3 /></span>
+                        <span className='bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><img src={luau} className='size-4'/></span>
+                    </div>
+                </div>
+            </div>
+
+            {/* Project 4 */}
+            <div className="bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg shadow-lg p-4 w-full flex flex-col sm:flex-row items-center justify-center mt-8">
+                <div className="flex flex-col sm:mr-4 mb-4 sm:mb-0 sm:w-1/2">
+                    <img src={sentinelImage} alt="Project Image" className="rounded-lg w-full h-48 sm:h-48 object-cover mb-4 cursor-pointer" />
+                    <a target="_blank" href="#" className="bg-neutral-900/50 border-2 border-neutral-800/50 text-white py-2 px-4 rounded hover:bg-neutral-800/50 transition duration-300 w-full sm:w-auto cursor-pointer text-center">Read More</a>
+                </div>
+                <div className="flex flex-col text-center sm:text-left sm:w-1/2">
+                    <h1 className="text-white text-3xl font-bold mb-2">Sentinel (WIP)</h1>
+                    <p className="text-gray-300 text-justify">A custom security system for Roblox that detects and logs exploits, integrates with webhooks, and provides an in-game admin panel.</p>
+                    <div className="flex flex-row gap-2 justify-center sm:justify-start mt-2 items-center">
+                        <span className='bg-neutral-900/50 border-2 border-neutral-800/50 rounded-lg p-1'><img src={luau} className='size-4'/></span>
                     </div>
                 </div>
             </div>
